@@ -21,4 +21,9 @@ class Contact extends Model
         'building',
         'detail',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
