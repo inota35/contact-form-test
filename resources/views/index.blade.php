@@ -18,10 +18,10 @@
             @csrf
             <div class="form-group">
                 <label>お名前<span>※</span></label>
-                <div>
-                    <input type="text" name="first_name" placeholder="例）山田" value="{{ old('first_name', session('first_name')) }}">
+                <div  style="display:flex; gap:10px; width:100%;">
+                    <input type="text" name="first_name" placeholder="例）山田" value="{{ old('first_name', session('first_name')) }}"style="width:50%;">
                     @error('first_name')<p style="color:red">{{ $message }}</p>@enderror
-                    <input type="text" name="last_name" placeholder="例）太郎" value="{{ old('last_name', session('last_name')) }}">
+                    <input type="text" name="last_name" placeholder="例）太郎" value="{{ old('last_name', session('last_name')) }}"style="width:50%;">
                     @error('last_name')<p style="color:red">{{ $message }}</p>@enderror
                 </div>
             </div>
